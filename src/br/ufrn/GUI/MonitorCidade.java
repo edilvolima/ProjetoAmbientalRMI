@@ -845,10 +845,10 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         
         //noise = NOISE_ON, NOISE_OFF
         if (area.equals(1)) {
+             LabeSomA1.setText("" + db);
             if (noise.equals("NOISE_ON")) {
                 if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
                     LabeSomA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-                    LabeSomA1.setText("" + db);
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
                 }
             } else if (noise.equals("NOISE_OFF")) {
@@ -856,10 +856,10 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                 //setar icone OFF
             }
         } else if (area.equals(2)) {
+            LabeSomA2.setText("" + db);
             if (noise.equals("NOISE_ON")) {
                 if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
                     LabeSomA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-                    LabeSomA2.setText("" + db);
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
                 }
             } else if (noise.equals("NOISE_OFF")) {
@@ -867,10 +867,10 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                 //setar icone OFF
             }
         } else if (area.equals(3)) {
+            LabeSomA3.setText("" + db);
             if (noise.equals("NOISE_ON")) {
                 if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
                     LabeSomA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-                    LabeSomA3.setText("" + db);
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
                 }
             } else if (noise.equals("NOISE_OFF")) {
@@ -878,10 +878,10 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                 //setar icone OFF
             }
         } else if (area.equals(4)) {
+             LabeSomA4.setText("" + db);
             if (noise.equals("NOISE_ON")) {
                 if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
                     LabeSomA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-                    LabeSomA4.setText("" + db);
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
                 }
             } else if (noise.equals("NOISE_OFF")) {

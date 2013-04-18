@@ -28,17 +28,17 @@ public class MonitoramentoArea implements AtualizarWidgetsRMI {
         areaIN = WidgetXmlParser.createWidget("Informa/area-widget-input_" + area.toString() + ".xml");
        
         areaIN.updateData("area", area);
-        areaIN.updateData("indexPollution", -100);
-        areaIN.updateData("vehicleFlow", -100);
+        areaIN.updateData("indexPollution", 0);
+        areaIN.updateData("vehicleFlow", 0);
         areaIN.updateData("directionWind", "norte");
-        areaIN.updateData("willRain", -100);
-        areaIN.updateData("noise", -100);
-        areaIN.updateData("temperature", -300);
-        areaIN.updateData("humidity", -100);
-        areaIN.updateData("windSpeed", -100);
-        areaIN.updateData("content", -100);
+        areaIN.updateData("willRain", 0);
+        areaIN.updateData("noise", 0);
+        areaIN.updateData("temperature", 0);
+        areaIN.updateData("humidity", 0);
+        areaIN.updateData("windSpeed", 0);
+        areaIN.updateData("content", 0);
         areaIN.updateData("agentNearName", "agente 1");
-        areaIN.updateData("agentDistance", -100);
+        areaIN.updateData("agentDistance", 5);
     
         //Enactors
         areaEnactor = EnactorXmlParser.createEnactor("Informa/area-enactor_" + area.toString() + ".xml");
