@@ -18,7 +18,7 @@
 		<Query name="PollutionBoa">
 			(AND
 				(GREATER_EQUAL indexPollution 0)
-				(LESS indexPollution 50)
+				(LESS indexPollution 24)
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"pollutionMonitor;"+"BOA"</Outcome>
@@ -30,8 +30,8 @@
 	<Reference name="pollutionRegular">
 		<Query name="pollutionRegular">
 			(AND
-				(GREATER indexPollution 50)
-				(LESS indexPollution 101)
+				(GREATER indexPollution 25)
+				(LESS indexPollution 49)
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"pollutionMonitor;"+"REGULAR"</Outcome>
@@ -43,8 +43,8 @@
 	<Reference name="pollutionInadequada">
 		<Query name="pollutionInadequada">
 			(AND
-				(GREATER indexPollution 100)
-				(LESS indexPollution 201)
+				(GREATER indexPollution 50)
+				(LESS indexPollution 74)
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"pollutionMonitor;"+"INADEQUADA"</Outcome>
@@ -56,8 +56,8 @@
 	<Reference name="pollutionMa">
 		<Query name="pollutionMa">
 			(AND
-				(GREATER indexPollution 200)
-				(LESS indexPollution 301)
+				(GREATER indexPollution 75)
+				(LESS indexPollution 100)
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"pollutionMonitor;"+"MA"</Outcome>
@@ -69,7 +69,7 @@
 	<Reference name="pollutionPessima">
 		<Query name="pollutionPessima">
 			(
-                            GREATER indexPollution 300
+                            GREATER indexPollution 100
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"pollutionMonitor;"+"PESSIMA"</Outcome>
@@ -105,7 +105,7 @@
         <Reference name="willRain">
 		<Query name="willRain">
 			(
-                            GREATER willRain 75
+                            GREATER willRain 80
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"willRainMonitor;"+"RAIN_ON"</Outcome>
@@ -129,7 +129,7 @@
 	<Reference name="acidRainHere">
 		<Query name="acidRainHere">
 			(AND
-				(GREATER indexPollution 250)
+				(GREATER indexPollution 100)
 				(LESS windSpeed 20)
 				(GREATER willRain 75)
 			)
@@ -143,7 +143,7 @@
 	<Reference name="acidRainOther">
 		<Query name="acidRainOther">
 			(AND
-				(GREATER indexPollution 250)
+				(GREATER indexPollution 100)
 				(GREATER windSpeed 30)
 				(GREATER willRain 75)
 			)
@@ -170,7 +170,7 @@
 	<Reference name="noiseOn">
 		<Query name="noiseOn">
 			(
-                            GREATER noise 60
+				GREATER noise 55
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"noiseMonitor;"+"NOISE_ON;"+noise</Outcome>
@@ -214,11 +214,13 @@
 	<Reference name="beautifulWeatherOn">
 		<Query name="beautifulWeatherOn">
 			(AND
+                            (LESS indexPollution 50)
                             (GREATER temperature 15)
-                            (LESS temperature 30)
-                            (GREATER humidity 60)
+                            (LESS temperature 28)
+                            (GREATER humidity 65)
+                            (GREATER windSpeed 12)
                             (GREATER windSpeed 20)
-                            (LESS willRain 60)
+                            (LESS willRain 50)
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"beautifulWeatherMonitor;"+"BEAUTIFUL_ON"</Outcome>
@@ -266,7 +268,7 @@
 	<Reference name="hotDryOn">
 		<Query name="hotDryOn">
 			(AND
-				(GREATER temperature 35)
+				(GREATER temperature 33)
 				(LESS humidity 25)
 			)
 		</Query>

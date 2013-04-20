@@ -453,7 +453,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         jLabel2.setText("Tempo Bom");
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/wind-cloud.png"))); // NOI18N
-        jLabel8.setText("Chuva Ácida rápida");
+        jLabel8.setText("Chuva Ácida Rápida");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -461,25 +461,20 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel49)
-                                .addComponent(jLabel48)
-                                .addComponent(jLabel53)
-                                .addComponent(jLabel51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel52)
-                                .addComponent(jLabel50)
-                                .addComponent(jLabel47)
-                                .addComponent(jLabel54)
-                                .addComponent(LabelCarroA5)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jLabel2))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel8)))
-                .addContainerGap())
+                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel49)
+                        .addComponent(jLabel48)
+                        .addComponent(jLabel53)
+                        .addComponent(jLabel51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel52)
+                        .addComponent(jLabel50)
+                        .addComponent(jLabel47)
+                        .addComponent(jLabel54)
+                        .addComponent(LabelCarroA5)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel8))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -512,13 +507,15 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         );
 
         jPanel1.add(jPanel7);
-        jPanel7.setBounds(810, 40, 151, 510);
+        jPanel7.setBounds(810, 40, 160, 510);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 962, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 975, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -860,7 +857,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         if (area.equals(1)) {
              LabeSomA1.setText("" + db);
             if (noise.equals("NOISE_ON")) {
-                if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
                     LabeSomA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
                 }
@@ -871,7 +868,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         } else if (area.equals(2)) {
             LabeSomA2.setText("" + db);
             if (noise.equals("NOISE_ON")) {
-                if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
                     LabeSomA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
                 }
@@ -882,7 +879,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         } else if (area.equals(3)) {
             LabeSomA3.setText("" + db);
             if (noise.equals("NOISE_ON")) {
-                if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
                     LabeSomA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
                 }
@@ -893,7 +890,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         } else if (area.equals(4)) {
              LabeSomA4.setText("" + db);
             if (noise.equals("NOISE_ON")) {
-                if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
                     LabeSomA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
                 }
